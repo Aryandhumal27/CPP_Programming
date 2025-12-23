@@ -148,6 +148,11 @@ class SinglyLL
 
         void InsertAtPos(int no, int pos)
         {
+            if(pos < 1 || pos > (iCount + 1))
+            {
+                return;
+            }
+            
             if(pos == 1)
             {
                 InsertFirst(no);
@@ -181,6 +186,11 @@ class SinglyLL
 
         void DeleteAtPos(int pos)
         {
+            if(pos < 1 || pos > (iCount))
+            {
+                return;
+            }    
+            
             if(pos == 1)
             {
                 DeleteFirst();
@@ -252,3 +262,4 @@ int main()
     return 0;
 
 }
+
