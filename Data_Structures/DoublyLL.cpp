@@ -173,9 +173,9 @@ class DoublyLL
             newn->next->prev = newn;
             temp->next = newn;
             newn->prev = temp;
-        }
 
-        iCount++;
+            iCount++;
+        }
     }
 
     void DeleteAtPos(int pos)
@@ -200,9 +200,9 @@ class DoublyLL
             temp->next = temp->next->next;
             delete temp->next->prev;
             temp->next->prev = temp;
-        }
 
-        iCount--;
+            iCount--;
+        }
     }
 };
 
@@ -252,4 +252,5 @@ int main()
     cout<<"Number of nodes are : "<<iRet<<"\n";
 
     return 0;
+
 }
