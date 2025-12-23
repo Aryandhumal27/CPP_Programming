@@ -174,9 +174,9 @@ class SinglyLL
 
                 newn->next = temp->next;
                 temp->next = newn;
-            }
 
-            iCount++;
+                iCount++;
+            }
         }
 
         void DeleteAtPos(int pos)
@@ -203,9 +203,9 @@ class SinglyLL
 
                 temp->next = temp->next->next;
                 delete target;
-            }
 
-            iCount--;
+                iCount--;
+            }
         }       
 };
 
@@ -250,4 +250,5 @@ int main()
     cout<<"Number of nodes are : "<<iRet<<"\n";
 
     return 0;
+
 }
