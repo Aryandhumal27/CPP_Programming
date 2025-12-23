@@ -199,7 +199,7 @@ class DoublyLL
 
     void DeleteAtPos(int pos)
     {
-        if(pos < 1 || pos > (iCount + 1))
+        if(pos < 1 || pos > (iCount))
         {
             return;
         }
@@ -328,4 +328,5 @@ int main()
 
     return 0;
 }
+
 
